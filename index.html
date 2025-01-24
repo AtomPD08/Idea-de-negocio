@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AtomPD</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Perfumes AtomPD</title>
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+
     <header>
-        <h1>Paulos perfumes</h1>
+        <h1>PD Fragancias</h1>
+        <p></p>
     </header>
-    <section id="info">
-        <h2>Información de la empresa</h2>
-        <br>
-        <p>En PD perfumes vendemos la mejor calidad de fragancias</p>
+
+    <section id="empresa">
+        <h2>La mejor tienda de perfumes con los mejores precios</h2>
+        <p>Somos una tienda revenddeora certificada de perfumes originales</p>
+        <img src="perfumes.webp" alt="Perfumes" width="400">
     </section>
 
-    <section id="contact">
-<h2>Contacanos</h2>
-<form action="#" method="post">
-    <label for="name">nombre</label>
-    <input type="text" id="name" required>
+    <section id="busqueda">
+        <h2>¿Buscas un perfume en especifico? </h2>
+        <p>Mandanos un mensaje con el nombre</p>
+       
+    </section>
 
-    <label for="email">email</label>
-    <input type="text" id="email" required>
-
-    <label for="mensaje">mensaje </label>
-    <textarea input id="mensaje" name="message" required> </textarea>
-
-    <button type="submit">enviar</button>
-</form>
+    <section id="formulario">
+        
+        <form action="enviar_formulario.php" method="POST">
+            <label for="perfume">Perfume:</label><br>
+            <input type="text" id="Perfume" name="Perfume" required><br><br>
+            
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="Dudas y preguntas">Dudas y preguntas:</label><br>
+            <textarea id="Dudas y preguntas" name="Dudas y preguntas" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 AtomPD. Todos los derechos reservados</p>
+        <p>&copy; 2025 Paulo Ibarra | Todos los derechos reservados.</p>
+       
     </footer>
+
+</body>
+</html>
